@@ -53,6 +53,7 @@ fBodyGyroMag.
 
 fBodyGyroJerkMag
 
+
 The set of variables that were estimated from these signals are: 
 
 mean(): Mean value
@@ -89,6 +90,7 @@ bandsEnergy(): Energy of a frequency interval within the 64 bins of the FFT of e
 
 angle(): Angle between to vectors.
 
+
 Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle() variable:
 
 gravityMean
@@ -112,18 +114,21 @@ mean(): Mean value
 std(): Standard deviation
 This dataset (called reduced\_dataset in the run_analysis.R script) has 66 estimated variables, plus the 'y' and 'subject'.
 
+
 2.- The coded information about the activity: {1,2,3,4,5,6} was decodified according with the content of the given file activity\_labels.txt. That is: 
-1: Walking
 
-2: Walking upstairs
+	1: Walking
 
-3: Walking downstairs
+	2: Walking upstairs
 
-4: Sitting
+	3: Walking downstairs
 
-5: Standing
+	4: Sitting
 
-6: Laying
+	5: Standing
+
+	6: Laying
+
 
 3.- Descriptive variable names were assigned to the chosen variables and to the 'y' variable:
 In order to do this, the table 2 of the original project paper:"A Public Domain Dataset for Human Activity Recognition (HAR) Using Smartphones", was consulted. In there are presented the generic names of the signals obtained from the smartphone sensors, in the two existent domains: time and frequency.
@@ -269,6 +274,7 @@ Using that generic names, and the original name of the data, the following nomen
 The criteria was to eliminate most abbreviatures (std. was kept because it is standard) and try to express in plain english (or at least on what I think it is so) the significance of each variable, making explicit if it is a time or a frequency variable.
 
 The units of these variables are: seconds for the time variables (1-40); Hz. for the frequency ones, (41-66), while the 67 and 68 are categorical variables.
+
 
 4.- With the dataset built from the original data, joining the training and the test information, which was dimensioned 10299 x 563, a second, independent tidy data set was created applying the
 three previously mentioned steps, and finally substituting all the observations per activity and subject with the average of each variable for each activity and each subject. That final dataset was called grouped\_dataset, and has dimensions 180 x 68. 
