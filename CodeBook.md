@@ -275,6 +275,7 @@ The criteria was to eliminate most abbreviatures (std. was kept because it is st
 
 The units of these variables are: seconds for the time variables (1-40); Hz. for the frequency ones, (41-66), while the 67 and 68 are categorical variables.
 
+NOTE: The file new\_names.txt holds this new nomenclature, and must be copied in the directory UCI\_HARD_Dataset prior to run the script. 
 
 4.- With the dataset built from the original data, joining the training and the test information, which was dimensioned 10299 x 563, a second, independent tidy data set was created applying the
 three previously mentioned steps, and finally substituting all the observations per activity and subject with the average of each variable for each activity and each subject. That final dataset was called grouped\_dataset, and has dimensions 180 x 68. 
