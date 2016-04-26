@@ -48,7 +48,7 @@ The extraction itself was done through a select() call, with the chosen column n
 In the initial data files, the 'y' column was codified numerically (1 to 6). In this section those numeric codes were replaced in that variable by its corresponding activity names, found in the file activity_labels.txt, using the mutate() function.
 
 ## Section F: Appropriately labels the data set with descriptive variable names.
-Based on the paper at  http://www.i6doc.com/en/livre/?GCOI=28001100131010, written by the original authors of the study, in particular on its table # 2, I prepared a file called "New\_names.txt", read by the script in this section with the "stringsAsFactors = FALSE" option, and assigned as new names to the chosen variables in the new reduced\_dataset frame, obtained from the big_joint in section D. 
+Based on the paper at  http://www.i6doc.com/en/livre/?GCOI=28001100131010, written by the original authors of the study, in particular on its table # 2, I prepared a file called "New\_names.txt", read by the script in this section with the "stringsAsFactors = FALSE" option, and assigned as new names to the chosen variables in the new reduced\_dataset frame, obtained from the big_joint in section D. THIS FILE MUST BE COPIED TO THE UCI HAR Dataset before running the script. 
 
 ## Section G: Obtains a second, collapsed untidy data set.
 From the data set in section F, creates a second, independent tidy data set
